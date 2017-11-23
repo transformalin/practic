@@ -1,5 +1,4 @@
-//bin search
-int BSearch(const int *data,const int x,int left,int right)
+int BSearch(int data[],const int x,int left,int right)
 {
 	if(left>right) return 0;
 	unsigned long long int middle = (unsigned long long int)(left+right)/2;
@@ -9,7 +8,7 @@ int BSearch(const int *data,const int x,int left,int right)
 }
 
 
-void QSort(int *numbers, int left, int right)
+void QSort(int numbers[], int left, int right)
 {
     int pivot, l_hold, r_hold;
     l_hold = left;
